@@ -1139,3 +1139,8 @@
 
         }
     }
+    @media(min-width:1024px){
+        .nav2{
+            display: none;
+        }
+    }
