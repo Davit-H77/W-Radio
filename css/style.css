@@ -70,6 +70,8 @@
         display: flex;
         justify-content: space-between;
         margin: 34px 0;
+        gap: 58px;
+        padding-right: 208px;
     }
 
     .home-button {
@@ -115,6 +117,34 @@
         font-size: 20px;
         font-weight: 400;
         color: var(--himnakan-sev-color);
+        transition: 0.4s ease;
+    }
+
+    .header-logo {
+        padding-right: 80px;
+    }
+
+    .nav1 {
+        display: flex;
+        align-items: center;
+        justify-content: space-between
+    }
+
+    .footer-a:hover,
+    .header-a:hover {
+        color: #6D31EE;
+    }
+
+    .footer-a:focus-visible,
+    .header-a:focus-visible {
+        outline: 0;
+        background-color: #AA9DFA;
+        color: #fff;
+    }
+
+    .footer-a:active,
+    .header-a:active {
+        color: #4F28A5;
     }
 
     .home-caption {
@@ -329,6 +359,9 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        position: absolute;
+        left: 0px;
+        top: 125px;
 
     }
 
@@ -346,6 +379,7 @@
 
     .inner {
         width: 540px;
+        position: relative;
     }
 
     .inner:nth-child(1) {
@@ -739,11 +773,14 @@
         transition: 0.4s ease;
     }
 
+    .archive:hover,
     .live-with-guests:hover {
         background-color: var(--primary_light);
         color: white;
+        border: 2px solid #AA9DFA;
     }
 
+    .archive:focus-visible,
     .live-with-guests:focus-visible {
         background-color: var(--primary);
         color: white;
@@ -752,6 +789,7 @@
 
     }
 
+    .archive:active,
     .live-with-guests:active {
         background-color: var(--primary_shade);
         color: white;
@@ -817,8 +855,44 @@
         font-size: 20px;
         font-weight: 500;
         color: #F0D288;
+        transition: 0.4s ease;
 
     }
+
+    .yandex-go-a:focus-visible {}
+
+    .yandex-go:hover {
+        background-color: #F0D288;
+        color: #121723;
+
+    }
+
+    .yandex-go:focus-visible {
+        background-color: #BB973E;
+        border: 2px solid #F0D288;
+        color: #121723;
+    }
+
+    .yandex-go:active {
+        background-color: #BB973E;
+        color: #121723;
+        border: 2px solid;
+
+    }
+
+    .yandex-go-svg-g:nth-child(1):active {
+        fill: #121723;
+    }
+
+    .yandex-go-svg-g:nth-child(1):active {
+        fill: #BB973E;
+    }
+
+
+
+
+
+
 
 
     .name-mail {
@@ -842,6 +916,19 @@
     #comment:focus-visible {
         background-color: #292E39;
         border: 1px solid #AA9DFA;
+        outline: 0;
+
+    }
+
+    #comment:not(:placeholder-shown),
+    .input:not(:placeholder-shown) {
+        border: 1px solid white;
+    }
+
+    #comment:invalid,
+    .input:invalid {
+        outline: 0;
+        border: 1px solid #D52B1E;
 
     }
 
@@ -1125,7 +1212,7 @@
         .nav-list2 {
             display: flex;
             justify-content: space-between;
-              max-width: 1110px;
+            max-width: 1110px;
             margin: 0 auto;
             font-family: "Muller";
         }
@@ -1133,14 +1220,15 @@
         .nav-logo-search {
             display: flex;
             justify-content: space-between;
-              max-width: 1110px;
+            max-width: 1110px;
             margin: 0 auto;
             font-family: "Muller";
 
         }
     }
-    @media(min-width:1024px){
-        .nav2{
+
+    @media(min-width:1024px) {
+        .nav2 {
             display: none;
         }
     }

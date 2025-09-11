@@ -11,25 +11,25 @@
 <body>
     <header>
         <div id="header">
-            <nav>
+            <nav class="nav1">
+                <img src="./imges/logo (1).svg" alt="Logo Radio" class="header-logo">
                 <ul class="nav-list">
-                    <li><img src="./imges/logo (1).svg" alt="Logo Radio"></li>
                     <li><a href="#podcasts" class="header-a">Подкасты</a></li>
                     <li><a href="#transmissions" class="header-a">Передачи</a></li>
                     <li><a href="#guest" class="header-a">Гости</a></li>
                     <li><a href="#playlist" class="header-a">Плейлисты</a></li>
                     <li><a href="#about-us" class="header-a">О нас</a></li>
-                    <li><a href="#" class=""><svg class="search-button" width="24" height="24" viewBox="0 0 24 24"
-                                fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z"
-                                    stroke="#6D31EE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                <path d="M21 21L16.65 16.65" stroke="#6D31EE" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                            </svg>
-                        </a>
-                    </li>
+                    
                 </ul>
+                <a href="#" class=""><svg class="search-button" width="24" height="24" viewBox="0 0 24 24"
+                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z"
+                                stroke="#6D31EE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M21 21L16.65 16.65" stroke="#6D31EE" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </a>
             </nav>
             <nav class="nav2">
                 <div class="nav-logo-search"><img src="./imges/logo (1).svg" alt="Logo">
@@ -525,11 +525,11 @@
                             </p>
                         </div>
                         <p class="radio-price">2 800 ₽</p>
-                        <div class="yandex-go">
+                        <div  class="yandex-go">
                             <svg width="21" height="20" viewBox="0 0 21 20" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <g clip-path="url(#clip0_184249_385)">
-                                    <path
+                                xmlns="http://www.w3.org/2000/svg" class="yandex-go-svg">
+                                <g clip-path="url(#clip0_184249_385)"  class="yandex-go-svg-g" >
+                                    <path 
                                         d="M10.5 20C16.0228 20 20.5 15.5228 20.5 9.99998C20.5 4.47714 16.0228 0 10.5 0C4.97724 0 0.5 4.47714 0.5 9.99998C0.5 15.5228 4.97724 20 10.5 20Z"
                                         fill="#F0D288" />
                                     <path
@@ -543,7 +543,7 @@
                                 </defs>
                             </svg>
 
-                            <a href="#">Купить на Яндекс.Маркет</a>
+                            <a href="#" class="yandex-go-a">Купить на Яндекс.Маркет</a>
                         </div>
                     </div>
                 </div>
@@ -602,12 +602,12 @@
 
                             <div>
                                 <label for="name"></label>
-                                <input type="text" name="name" id="name" placeholder="Имя" class="name-mail input">
+                                <input type="text" name="name" id="name" placeholder="Имя" class="name-mail input" pattern="[a-z]+">
                             </div>
 
                             <div>
                                 <label for="Email"></label>
-                                <input type="email" name="email" id="email" placeholder="Email" class="name-mail input">
+                                <input type="email" name="email" id="email" placeholder="Email" class="name-mail input" required>
                             </div>
                         </div>
 
@@ -665,19 +665,19 @@
                 </div>
                 <div class="footer-a-list">
                     <ul class="footer-a-list-ul">
-                        <li class="footer-a"><a href="#podcasts">Подкасты</a></li>
-                        <li class="footer-a"><a href="#playlists">Плейлисты</a></li>
-                        <li class="footer-a"><a href="#news">Новости</a></li>
+                        <li><a class="footer-a" href="#podcasts">Подкасты</a></li>
+                        <li><a class="footer-a" href="#playlists">Плейлисты</a></li>
+                        <li><a class="footer-a" href="#news">Новости</a></li>
                     </ul>
                     <ul class="footer-a-list-ul">
-                        <li class="footer-a"><a href="#transmissions">Передачи</a></li>
-                        <li class="footer-a"><a href="#">Сетка</a></li>
-                        <li class="footer-a"><a href="#">Блоги</a></li>
+                        <li><a href="#transmissions" class="footer-a">Передачи</a></li>
+                        <li><a href="#" class="footer-a">Сетка</a></li>
+                        <li><a href="#" class="footer-a">Блоги</a></li>
                     </ul>
                     <ul class="footer-a-list-ul">
-                        <li class="footer-a"><a href="#guests">Гости</a></li>
-                        <li class="footer-a"><a href="#about-us">О нас</a></li>
-                        <li class="footer-a"><a href="#">Топы</a></li>
+                        <li><a href="#guests" class="footer-a">Гости</a></li>
+                        <li><a href="#about-us" class="footer-a">О нас</a></li>
+                        <li><a href="#" class="footer-a">Топы</a></li>
                     </ul>
 
                 </div>
