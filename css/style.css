@@ -70,8 +70,14 @@
         display: flex;
         justify-content: space-between;
         margin: 34px 0;
-        gap: 58px;
+        gap: 58.75px;
         padding-right: 208px;
+    }
+
+    .nav-list-div {
+        border: 1px solid #E6E8EC;
+        padding: 22px 0;
+        width: 100%;
     }
 
     .home-button {
@@ -104,6 +110,10 @@
         border: 1px solid;
     }
 
+    .divider {
+        height: 1px;
+    }
+
 
     #home {
         background-image: url(../imges/microphone.svg);
@@ -129,6 +139,8 @@
         align-items: center;
         justify-content: space-between
     }
+
+
 
     .footer-a:hover,
     .header-a:hover {
@@ -234,7 +246,7 @@
     .podcasts-inner-list {
         display: flex;
         flex-wrap: wrap;
-        gap: 28px;
+        gap: 30px;
     }
 
     .playlist-card-list {
@@ -842,7 +854,7 @@
         left: 10px;
     }
 
-    .yandex-go {
+    .yandex-go-a {
         display: flex;
         width: 300px;
         height: 70px;
@@ -859,34 +871,53 @@
 
     }
 
-    .yandex-go-a:focus-visible {}
+    .fir .yandex-go-a:focus-visible {}
 
-    .yandex-go:hover {
+    .yandex-go-a:hover {
         background-color: #F0D288;
         color: #121723;
 
     }
 
-    .yandex-go:focus-visible {
+    .yandex-go-a:focus-visible {
         background-color: #BB973E;
         border: 2px solid #F0D288;
         color: #121723;
+        outline: 0;
+
     }
 
-    .yandex-go:active {
+
+    .yandex-go-a:active {
+
         background-color: #BB973E;
         color: #121723;
         border: 2px solid;
 
     }
 
-    .yandex-go-svg-g:nth-child(1):active {
-        fill: #121723;
+    .yandex-go-svg-g {
+        .first:active {
+            fill: #BB973E;
+        }
+
+        .first:hover {
+            fill: #F0D288;
+        }
+
+        .back:focus-visible {
+            fill: #F0D288;
+        }
+
+        .back:active {
+            fill: #121723;
+        }
+
+        .back:hover {
+            fill: #121723;
+        }
     }
 
-    .yandex-go-svg-g:nth-child(1):active {
-        fill: #BB973E;
-    }
 
 
 
@@ -968,6 +999,7 @@
         gap: 30px;
         margin-top: 30px;
         margin-bottom: 30px;
+        flex-wrap: wrap;
     }
 
     .about-us-card-p {
@@ -1197,7 +1229,7 @@
         #reklam,
         #about-us,
         #footer-2 {
-            max-width: 1110px;
+            max-width: 824px;
             margin: 0 auto;
             font-family: "Muller";
 
@@ -1209,10 +1241,14 @@
             display: none;
         }
 
+        .nav1 {
+            display: none;
+        }
+
         .nav-list2 {
             display: flex;
             justify-content: space-between;
-            max-width: 1110px;
+            max-width: 824px;
             margin: 0 auto;
             font-family: "Muller";
         }
@@ -1220,10 +1256,107 @@
         .nav-logo-search {
             display: flex;
             justify-content: space-between;
-            max-width: 1110px;
+            max-width: 824px;
             margin: 0 auto;
             font-family: "Muller";
+            padding: 33px 0;
 
+        }
+
+        .spiral {
+            display: none;
+        }
+
+        .down {
+            width: 255px;
+            height: 255px;
+        }
+
+        .radio-img {
+            height: 349px;
+        }
+
+        .radio-new {
+            width: 100px;
+            height: 100px;
+        }
+
+        .guest-p {
+            height: 174px;
+            width: 359px;
+            margin: 0;
+            margin-top: 8px;
+        }
+        .guest-card-caption{
+            margin: 0;
+        }
+
+        .about-us-card-img {
+            width: 397px;
+            height: 255px
+        }
+
+        .about-us-card {
+            width: 397px;
+        }
+
+        #comment {
+            width: 100%;
+        }
+
+        .name-mail {
+            width: 383px;
+        }
+
+        .transmissions-card-div {
+            gap: 29px;
+        }
+
+        #home {
+            background-repeat: no-repeat;
+            background-image: url(../imges/micraphone1024.svg);
+            background-position: right;
+        }
+
+        .home-p {
+            width: 539px;
+        }
+
+        .playlists-card {
+            width: 255px;
+            flex-direction: row;
+        }
+
+        .playlist-card-info {
+            width: 100%;
+        }
+
+        .playlists-card img {
+            width: 112px;
+            height: 112px;
+        }
+
+        .playlist-card-list {
+            width: 825px;
+        }
+
+        .playlist-card-list-div {
+            display: block;
+
+        }
+
+        .playlist-caption-p {
+            width: 100%;
+            max-width: 100%;
+            padding-bottom: 30px;
+        }
+
+        .inner {
+            width: 396px;
+        }
+
+        .podcasts-card-text {
+            width: 254px;
         }
     }
 
