@@ -112,6 +112,7 @@
 
     .divider {
         height: 1px;
+
     }
 
 
@@ -731,10 +732,14 @@
     .guest-caption {
         color: #FFF;
         padding-top: 94px;
+        font-size: 48px;
+        font-weight: 400;
     }
 
     .guest-card-caption {
         color: #fff;
+        font-size: 20px;
+        font-weight: 500;
 
     }
 
@@ -743,13 +748,14 @@
         flex-direction: column;
         justify-content: space-between;
         width: 428px;
-        margin-left: 465px;
+       
     }
 
-    .guest-card:nth-child(1) {
+    /*.guest-card:nth-child(1) {
         background-image: url(../imges/photo\ 1.svg);
         background-repeat: no-repeat;
     }
+        
 
     .guest-card:nth-child(2) {
         background-image: url(../imges/photo\ 2.svg);
@@ -761,10 +767,12 @@
         background-repeat: no-repeat;
         padding-bottom: 94px;
     }
-
+*/
     .guest-card {
         height: 272px;
         display: flex;
+        gap: 30px;
+       
     }
 
     .guest-card-list {
@@ -871,11 +879,22 @@
 
     }
 
-    .fir .yandex-go-a:focus-visible {}
+
 
     .yandex-go-a:hover {
         background-color: #F0D288;
         color: #121723;
+
+        svg g {
+            .first {
+                fill: #F0D288;
+            }
+
+            .back {
+                fill: #121723;
+            }
+
+        }
 
     }
 
@@ -894,37 +913,18 @@
         color: #121723;
         border: 2px solid;
 
+        svg g {
+            .first {
+                fill: #BB973E;
+            }
+
+            .back {
+                fill: #121723;
+            }
+
+        }
+
     }
-
-    .yandex-go-svg-g {
-        .first:active {
-            fill: #BB973E;
-        }
-
-        .first:hover {
-            fill: #F0D288;
-        }
-
-        .back:focus-visible {
-            fill: #F0D288;
-        }
-
-        .back:active {
-            fill: #121723;
-        }
-
-        .back:hover {
-            fill: #121723;
-        }
-    }
-
-
-
-
-
-
-
-
 
     .name-mail {
 
@@ -1219,6 +1219,22 @@
         }
     }
 
+    .archive-768-div {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        justify-content: center;
+        border-top: 1px solid #E6E8EC;
+    }
+
+    .archive-info-768 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start
+    }
+
+
+    /* 1024 TABLET*/
     @media(max-width:1024px) {
 
         #home,
@@ -1287,9 +1303,27 @@
             margin: 0;
             margin-top: 8px;
         }
-        .guest-card-caption{
-            margin: 0;
+        .guest-card{
+            height: 100%;
         }
+        .live-with-guests{
+           position: static;
+        }
+
+        .guest-card-caption {
+            margin: 0;
+
+        }
+        .guest-card-text{
+            padding-bottom: 42px;
+        }
+        .guest-caption-p{
+            width: 100%;
+        }
+        .guest-card-list{
+            padding-bottom: 106px;
+        }
+       
 
         .about-us-card-img {
             width: 397px;
@@ -1358,10 +1392,272 @@
         .podcasts-card-text {
             width: 254px;
         }
+        .about-us-786svg{
+            display: none;
+        }
     }
 
     @media(min-width:1024px) {
         .nav2 {
             display: none;
         }
+        .about-us-786svg{
+            display: none;
+        }
+
     }
+
+
+    /*768*/
+
+    @media(max-width: 768px) {
+
+        #home,
+        #podcasts,
+        #guest,
+        #playlists,
+        #reklam,
+        #footer-2 {
+            max-width: 539px;
+            margin: 0 auto;
+            font-family: "Muller";
+        }
+
+        .nav-list2 {
+            display: flex;
+            justify-content: space-between;
+            max-width: 539px;
+            margin: 0 auto;
+            font-family: "Muller";
+        }
+
+        .nav-logo-search {
+            display: flex;
+            justify-content: space-between;
+            max-width: 539px;
+            margin: 0 auto;
+            font-family: "Muller";
+            padding:0;
+
+        }
+        .search-button{
+            padding: 28px 0;
+        }
+        .archive-info{
+            display: none;
+        }
+
+        #home {
+            background-image: none;
+        }
+       
+        .reklam-section-div {
+            flex-wrap: wrap;
+        }
+
+        .inner {
+            width: 540px;
+        }
+
+        .podcasts-card-text {
+            width: 398px;
+        }
+        .playlist-card-list{
+            width: 540px;
+        }
+          .about-us-786svg{
+            display:block;
+            padding: 30px 0;
+        }
+        .about-us-p{
+            max-width: 539px;
+            margin: 0 auto;
+        }
+        .about-us-caption{
+            max-width: 539px;
+            margin: 0 auto;
+        }
+        .about-us-caption-text{
+           display: block;
+        }
+        .down{
+            display: none;
+        }
+        .about-us-background-images{
+            margin: 0;
+            padding: 30px 0;
+        }
+        .about-us-card-list{
+            width: 540px;
+            margin: 0 auto;
+            padding-bottom: 30px;
+        }
+        .about-us-card-img{
+            width: 255px;
+        }
+        .about-us-card{
+            width: 255px;
+        }
+        .about-us-p-p{
+            margin: 0;
+        }
+        .about-us-text-p{
+            margin: 12px 0 8px 0;
+        }
+        .about-us-started{
+            max-width: 539px;
+            margin: 0 auto;
+        }
+
+       
+
+        .transmissions-card-list {
+            width: 540px;
+        }
+
+        .transmissions-card-div {
+            display: block;
+        }
+            .transmissions-card-div{
+                max-width: 539px;
+                margin: 0 auto;
+            }
+             .guest-card{
+            flex-wrap: wrap;
+        }
+        .header-a{
+            font-size: 16px;
+        }
+        .radio-img{
+            height: 474px;
+        }
+        .radio-new{
+            height: 160px;
+            width: 160px;
+        }
+        .reklam-section-div{
+            gap: 50px;
+        }
+        .data-list{
+            max-width: 539px;
+            margin: 0 auto;
+        }
+
+        #comment{
+            width: 507px;
+        }
+        .form-name-mail{
+            flex-wrap: wrap;
+        }
+        .name-mail{
+            width: 508px;
+        }
+        .footer-a-list{
+            justify-content: space-between;
+            gap: 156px;
+          
+        }
+        #footer-2{
+            display: block;
+            padding: 94px 0 80px 0;
+        }
+        .footer-logo-a{
+            align-items:center;
+            padding-bottom: 80px;
+           
+        }
+        .youtube-svg{
+            width: 30px;
+            height: 24px;
+        }
+        .footer-svg{
+            width: 30px;
+            height: 30px;
+        }
+        .home-text{
+        padding:90px 0 115px 0;
+    }
+    .home-p{
+        padding-bottom: 45px;
+    }
+   
+
+
+        
+
+    }
+
+    @media(min-width:768px) {
+        .archive-768-div{
+        display: none;
+       
+    }
+}
+
+/*320 */
+
+
+@media(max-width:320px){
+      #home,
+        #podcasts,
+        #guest,
+        #playlists,
+        #reklam,
+        #footer-2 {
+            max-width: 256px;
+            margin: 0 auto;
+            font-family: "Muller";
+        }
+
+         .nav-list2 {
+            display: flex;
+            justify-content: space-between;
+            max-width: 256px;
+            margin: 0 auto;
+            font-family: "Muller";
+        }
+
+        .nav-logo-search {
+            display: flex;
+            justify-content: space-between;
+            max-width: 256px;
+            margin: 0 auto;
+            font-family: "Muller";
+            padding: 25px 0;
+            align-items: center;
+
+        }
+        .nav-a-320{
+            display: none;
+        }
+         .home-caption p {
+        font-size: 32px;
+        font-weight: 400;
+    }
+     .home-caption h2 {
+        font-weight: 700;
+        font-size: 32px;
+    }
+    .home-p{
+        width: 256px;
+        padding-bottom: 37px;
+
+    }
+    #home{
+        height: 100%;
+    }
+    .header-logo2{
+        width: 87px;
+        height: 10px;
+    }
+    .home-button{
+        padding: 17px 45px;
+        font-size: 16px;
+        font-weight: 500;
+    }
+    .home-text{
+        padding:40px 0 57px 0;
+
+    }
+
+}
