@@ -26,6 +26,13 @@
         font-weight: 300;
     }
 
+    @font-face {
+        font-family: "Muller-italic";
+        src: local("Muller") url(../fonts/Muller-Trial-RegularItalic.woff2)(woff2),
+            url(../fonts/Muller-Trial-RegularItalic.woff) format(woff);
+        font-weight: 400;
+    }
+
     :root {
         -webkit-text-stroke-color: #121723;
         --primary: #6D31EE;
@@ -74,9 +81,14 @@
         padding-right: 208px;
     }
 
+    .home-caption-p {
+        font-size: 60px;
+        font-family: "Muller-italic";
+    }
+
     .nav-list-div {
         border: 1px solid #E6E8EC;
-        padding: 22px 0;
+        padding: 15px 0;
         width: 100%;
     }
 
@@ -201,7 +213,7 @@
     }
 
     .home-text {
-        padding: 94px 0 119px 0;
+        padding: 88px 0 119px 0;
     }
 
     .home-p {
@@ -211,7 +223,7 @@
         width: 635px;
         padding-bottom: 70px;
         color: var(--himnakan-sev-color);
-        margin: 14px 0 0 0;
+        margin: 7px 0 0 0;
     }
 
     .home-caption h2 {
@@ -254,10 +266,14 @@
         gap: 30px;
         display: flex;
         flex-wrap: wrap;
-        width: 742px;
+        width: 100%;
         margin: 0;
         margin-bottom: 94px;
+        justify-content: flex-end;
+        padding-top: 88px
     }
+
+
 
     .playlist-end-foto {
         height: 160px;
@@ -287,7 +303,7 @@
     .playlist-card-list-div {
         display: flex;
         justify-content: flex-end;
-        padding-top: 94px;
+        padding-top: 0px;
     }
 
     .playlist-card-info {
@@ -320,11 +336,12 @@
     }
 
     .podcasts-caption {
-        padding-top: 94px;
-        padding-bottom: 30px;
+
+        padding-bottom: 26px;
         font-size: 48px;
         font-weight: 400;
-        margin: bottom 30px;
+        padding-top: 88px;
+
     }
 
     .podcasts-card-text-p {
@@ -353,6 +370,7 @@
         align-items: center;
         display: flex;
         margin-bottom: 20px;
+
 
     }
 
@@ -560,6 +578,7 @@
     .transmissions-card-div {
         display: flex;
         justify-content: space-between;
+        padding: 88px 0 68px 0;
 
     }
 
@@ -568,9 +587,7 @@
 
     }
 
-    .transmissions-card-div {
-        padding: 94px 0;
-    }
+
 
     .transmissions-card-caption {
         margin-left: 16px;
@@ -715,31 +732,46 @@
         line-height: 180%;
         font-weight: 400;
         height: 116px;
+        margin: 0;
+
+        width: 458px;
+        margin-top: 3px;
     }
 
     .guest-caption-p {
         color: var(--text_gray);
         width: 825px;
         margin-top: 8px;
-        margin-bottom: 50px
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 160%;
+        margin-bottom: 0;
+
+
     }
 
     .guest-caption-p-p {
-        margin-top: 12px;
+        margin-top: 14px;
         color: var(--text_gray);
+        font-size: 20px;
+        font-weight: 700;
+        margin-bottom: 12px;
     }
 
     .guest-caption {
         color: #FFF;
-        padding-top: 94px;
+        padding-top: 88px;
         font-size: 48px;
         font-weight: 400;
+
     }
 
     .guest-card-caption {
         color: #fff;
         font-size: 20px;
         font-weight: 500;
+        margin-top: 0;
+        margin-bottom: 0px;
 
     }
 
@@ -780,6 +812,7 @@
         flex-direction: column;
         gap: 50px;
         padding-bottom: 94px;
+        margin-top: 50px;
     }
 
     .live-with-guests {
@@ -850,6 +883,8 @@
         line-height: 100%;
         color: var(--himnakan-sev-color);
         margin: 0;
+        padding-top: 77px;
+
 
     }
 
@@ -999,8 +1034,10 @@
         display: flex;
         gap: 30px;
         margin-top: 30px;
-        margin-bottom: 30px;
+
         flex-wrap: wrap;
+        margin-bottom: 25px;
+        height: 100%;
     }
 
     .about-us-card-p {
@@ -1011,10 +1048,17 @@
         margin: 0;
     }
 
+    .about-us-p-p {
+        margin: 7px 0 0 0;
+        width: 634px;
+    }
+
     .about-us-card-caption {
         color: white;
         font-size: 20px;
         font-weight: 500;
+        margin-bottom: 8px;
+        margin-top: 22px;
     }
 
     .about-us-card {
@@ -1023,7 +1067,9 @@
     }
 
     .about-us-caption-text {
+
         display: flex;
+        align-items: flex-end;
 
     }
 
@@ -1046,6 +1092,8 @@
         font-size: 20px;
         color: var(--text_gray);
         line-height: 150%;
+        margin: 0;
+        margin-top: 13px
     }
 
     .about-us-caption {
@@ -1053,7 +1101,7 @@
         font-size: 48px;
         font-weight: 400;
         line-height: 100%;
-        padding-top: 94px;
+        padding-top: 96px;
         margin: 0;
     }
 
@@ -1075,8 +1123,10 @@
         display: flex;
         align-items: center;
         gap: 30px;
-        padding-top: 94px;
-        padding-bottom: 133px;
+        padding-top: 74px;
+        padding-bottom: 127px;
+        justify-content: flex-end;
+
     }
 
     .reklam-radio-img {
@@ -1096,7 +1146,7 @@
         color: #F0D288;
         font-weight: 400;
         width: 441px;
-        margin: 0 0 19px 0;
+        margin: 0 0 8px 0;
     }
 
     .reklam-text-svg {
@@ -1147,7 +1197,7 @@
         justify-content: space-between;
         /* height: 323px; */
         padding-top: 94px;
-        padding-bottom: 94px
+        padding-bottom: 90px
     }
 
     .footer-a-list-ul {
@@ -1168,13 +1218,13 @@
 
     .footer-a-list {
         display: flex;
-        gap: 109px;
+        gap: 119px;
         justify-content: flex-end;
     }
 
     .footer-link-list {
         display: flex;
-        gap: 21px;
+        gap: 26px;
         align-items: center;
     }
 
@@ -1185,7 +1235,7 @@
         color: #A1A6B4;
         text-align: center;
         font-family: "Muller";
-        padding: 10px 0;
+        padding: 5px 0;
         margin: 0;
     }
 
@@ -1276,12 +1326,24 @@
             max-width: 824px;
             margin: 0 auto;
             font-family: "Muller";
-            padding: 33px 0;
+            padding: 26px 0
+        }
 
+        .nav-list-div {
+            padding: 19px 0;
+        }
+
+        .home-p {
+            padding-bottom: 47px;
+            width: 539px;
         }
 
         .spiral {
             display: none;
+        }
+
+        .podcasts-caption {
+            padding-top: 83px;
         }
 
         .down {
@@ -1300,17 +1362,26 @@
 
         .guest-p {
             height: 174px;
-            width: 359px;
+            width: 362px;
             margin: 0;
-            margin-top: 8px;
+            margin-top: 3px;
+        }
+
+        .guest-caption-p {
+            width: 536px;
         }
 
         .guest-card {
             height: 100%;
         }
 
+        .guest-card-list {
+            padding-bottom: 90px;
+        }
+
+
         .live-with-guests {
-            position: static;
+            position: absolute;
         }
 
         .guest-card-caption {
@@ -1322,9 +1393,7 @@
             padding-bottom: 42px;
         }
 
-        .guest-caption-p {
-            width: 100%;
-        }
+
 
         .guest-card-list {
             padding-bottom: 106px;
@@ -1338,6 +1407,7 @@
 
         .about-us-card {
             width: 397px;
+            margin-bottom: 0;
         }
 
         #comment {
@@ -1345,7 +1415,7 @@
         }
 
         .name-mail {
-            width: 383px;
+            width: 361px;
         }
 
         .transmissions-card-div {
@@ -1358,9 +1428,6 @@
             background-position: right;
         }
 
-        .home-p {
-            width: 539px;
-        }
 
         .playlists-card {
             width: 255px;
@@ -1369,6 +1436,9 @@
 
         .playlist-card-info {
             width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
 
         .playlists-card img {
@@ -1378,6 +1448,7 @@
 
         .playlist-card-list {
             width: 825px;
+            padding-top: 0;
         }
 
         .playlist-card-list-div {
@@ -1391,6 +1462,14 @@
             padding-bottom: 30px;
         }
 
+        .playlist-caption {
+            padding-top: 62px;
+        }
+
+        .playlist-span {
+            font-family: "Muller-italic";
+        }
+
         .inner {
             width: 396px;
         }
@@ -1399,12 +1478,50 @@
             width: 254px;
         }
 
+        .playlist-card-caption {
+            margin-left: 10px;
+
+        }
+
+        .playlist-card-p {
+            margin-left: 10px;
+        }
+
         .about-us-786svg {
             display: none;
         }
+
+        .reklam-section-div {
+            justify-content: flex-start;
+        }
+
+        .reklam-tex-div {
+            width: 397px;
+        }
+
+        .reklam-text-svg {
+            margin-bottom: 26px;
+            width: 396px;
+        }
+
+        .reklam-text-caption {
+            margin-top: 6px;
+        }
+
+        .about-us-p-p {
+            width: 539px;
+        }
+
+        .about-us-caption {
+            padding-top: 57px;
+        }
+
+        .about-us-caption-text {
+            align-items: center;
+        }
     }
 
-    @media(min-width:1024px) {
+    @media(min-width:1025px) {
         .nav2 {
             display: none;
         }
@@ -1433,10 +1550,11 @@
 
         .nav-list2 {
             display: flex;
-            justify-content: space-between;
+
             max-width: 539px;
             margin: 0 auto;
             font-family: "Muller";
+            gap: 54px
         }
 
         .nav-logo-search {
@@ -1447,6 +1565,10 @@
             font-family: "Muller";
             padding: 0;
 
+        }
+
+        .nav-list-div {
+            padding: 18px 0;
         }
 
         .search-button {
@@ -1536,20 +1658,68 @@
 
         .transmissions-card-list {
             width: 540px;
+            padding-top: 120px;
+            margin: 0;
         }
 
         .transmissions-card-div {
             display: block;
         }
 
+        .archive-p {
+            font-size: 16px;
+            font-weight: 400;
+            margin-top: 6px;
+            line-height: 150%
+        }
+
+        .archive {
+            width: 160px;
+            text-align: center;
+            padding: 12px 0;
+            margin: 0;
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+        .archive-768-div {
+            padding-bottom: 13px;
+        }
+
+        .guest-card img {
+            height: 340px;
+        }
+
+        .live-with-guests {
+            position: static;
+        }
+
+        .guest-card-list {
+            gap: 64px;
+            padding-bottom: 101px;
+            margin-bottom: 0;
+        }
+
+        .playlist-caption {
+            padding-top: 94px
+        }
+
+        .playlist-card-list {
+            margin-bottom: 113px
+        }
+
+
         .transmissions-card-div {
             max-width: 539px;
             margin: 0 auto;
+            padding: 90px 0 68px 0;
+            ;
         }
 
         .guest-card {
             flex-wrap: wrap;
         }
+
 
         .header-a {
             font-size: 16px;
@@ -1565,7 +1735,30 @@
         }
 
         .reklam-section-div {
-            gap: 50px;
+            gap: 38px;
+            padding-top: 53px;
+            padding-bottom: 90px;
+        }
+
+        .about-us-caption {
+            padding-top: 96px
+        }
+
+        .reklam-text-caption {
+            line-height: 100%;
+            margin-bottom: 15px;
+        }
+
+        .about-us-background-images {
+            padding: 0;
+        }
+
+        .reklam-tex-div {
+            width: 540px;
+        }
+
+        .reklam-text-svg {
+            margin-bottom: 17px;
         }
 
         .data-list {
@@ -1593,7 +1786,7 @@
 
         #footer-2 {
             display: block;
-            padding: 94px 0 80px 0;
+            padding: 95px 0 80px 0;
         }
 
         .footer-logo-a {
@@ -1620,13 +1813,18 @@
             padding-bottom: 45px;
         }
 
+        .about-us-checkbox {
+            padding-bottom: 83px;
+        }
+
+
 
 
 
 
     }
 
-    @media(min-width:768px) {
+    @media(min-width:769px) {
         .archive-768-div {
             display: none;
 
@@ -1636,7 +1834,8 @@
     /*320 */
 
 
-    @media(max-width: 320px){
+    @media(max-width: 320px) {
+
         #home,
         #podcasts,
         #guest,
@@ -1648,12 +1847,17 @@
             font-family: "Muller";
         }
 
+        .footer-a-list {
+            display: none;
+        }
+
         .nav-list2 {
             display: flex;
             justify-content: space-between;
             max-width: 256px;
             margin: 0 auto;
             font-family: "Muller";
+            gap: 25px;
         }
 
         .nav-logo-search {
@@ -1662,13 +1866,133 @@
             max-width: 256px;
             margin: 0 auto;
             font-family: "Muller";
-            padding: 25px 0;
+            padding: 0;
             align-items: center;
+            height: 55px
+        }
 
+        .nav-list-div {
+            padding: 15px 0;
+        }
+
+        .transmissions-card-div {
+            max-width: 256px;
         }
 
         .nav-a-320 {
             display: none;
+        }
+
+        .inner {
+            display: flex;
+            flex-direction: column;
+
+        }
+
+
+        .inerr-div1 {
+            background-image: url(../imges/Rectangle\ 7.png);
+            background-size: cover;
+            height: 72px;
+            width: 256px;
+            background-repeat: no-repeat;
+            position: relative;
+        }
+
+        .inerr-div2 {
+            background-image: url(../imges/Rectangle\ 2.png);
+            background-size: cover;
+            height: 72px;
+            width: 256px;
+            background-repeat: no-repeat;
+            position: relative;
+        }
+
+        .inerr-div3 {
+            background-image: url(../imges/Rectangle\ 3.png);
+            background-size: cover;
+            height: 72px;
+            width: 256px;
+            background-repeat: no-repeat;
+            position: relative;
+        }
+
+        .inerr-div4 {
+            background-image: url(../imges/Rectangle\ 4.png);
+            background-size: cover;
+            height: 72px;
+            width: 256px;
+            background-repeat: no-repeat;
+            position: relative;
+        }
+
+        .inerr-div5 {
+            background-image: url(../imges/Rectangle\ 5.png);
+            background-size: cover;
+            height: 72px;
+            width: 256px;
+            background-repeat: no-repeat;
+            position: relative;
+        }
+
+        .inerr-div6 {
+            background-image: url(../imges/Rectangle\ 6.png);
+            background-size: cover;
+            height: 72px;
+            width: 256px;
+            background-repeat: no-repeat;
+            position: relative;
+        }
+
+        .inerr-div7 {
+            background-image: url(../imges/Rectangle7.png);
+            background-size: cover;
+            height: 72px;
+            width: 256px;
+            background-repeat: no-repeat;
+            position: relative;
+        }
+
+        .inerr-div8 {
+            background-image: url(../imges/Rectangle\ 8.png);
+            background-size: cover;
+            height: 72px;
+            width: 256px;
+            background-repeat: no-repeat;
+            position: relative;
+        }
+
+
+
+        .podcasts-card-text {
+            width: 226px;
+            margin: 0;
+            height: 113px;
+            padding: 0 14px 0 16px
+        }
+
+        .podcasts-card-text-p-p {
+            font-size: 12px;
+        }
+
+        .podcasts-card-text-h2 {
+            font-size: 16px;
+            margin: 8px 0 5px 0;
+        }
+
+        .podcasts-caption {
+            padding-top: 49px;
+            font-size: 24px;
+            padding-bottom: 20px;
+        }
+
+        .podcasts-span {
+            position: absolute;
+            top: 0;
+        }
+
+        .home-text {
+            padding: 37px 0 57px 0;
         }
 
         .home-caption p {
@@ -1684,8 +2008,15 @@
         .home-p {
             width: 256px;
             padding-bottom: 37px;
+            font-size: 14px;
+
 
         }
+
+        .home-caption {
+            gap: 8px;
+        }
+
 
         #home {
             height: 100%;
@@ -1702,10 +2033,7 @@
             font-weight: 500;
         }
 
-        .home-text {
-            padding: 40px 0 57px 0;
 
-        }
 
         .radio-img {
             width: 256px;
@@ -1719,15 +2047,6 @@
 
         .reklam-text {
             max-width: 259px;
-        }
-          .playlist-card{
-            width: 113px;
-           display: block;
-            height: 159px;
-           
-        }
-        .playlist-card{
-        
         }
 
         .reklam-text-svg {
@@ -1746,22 +2065,348 @@
             font-size: 16px;
         }
 
-        .playlist-card img {
-            width: 114px;
-            height: 113px;
+        .playlist-card-info {
+            height: 46px;
         }
-        .playlist-card-list{
+
+        .playlists-card img {
+            width: 114px;
+            height: 114px;
+        }
+
+        .playlist-card-list {
             width: 256px;
         }
-        .playlist-card-caption{
-            font-size: 12px;
+
+        .playlists-card {
+            width: 113px;
+
+            height: 159px;
+            flex-direction: column;
+
         }
-        .playlist-card-p{
+
+        .playlist-span {
+            font-size: 12px;
+            font-weight: 300;
+        }
+
+        .playlist-card-caption {
+            font-size: 12px;
+            margin-top: 10px;
+            margin-bottom: 5px;
+            font-size: 12px;
+            font-weight: 500;
+        }
+
+        .playlist-p {
+            font-size: 12px;
+            line-height: 16px;
+        }
+
+        .playlist-card-p {
+            font-size: 9px;
+            margin-bottom: 10px;
+        }
+
+        .transmissions-card {
+            background-size: 113px;
+            width: 113px;
+
+        }
+
+        .transmissions-card-text {
+            padding-top: 60px;
+            height: 113px;
+
+        }
+
+        .transmissions-card-p {
+            font-size: 9px;
+            margin-left: 10px;
+            margin-bottom: 30px;
+            width: 91px;
+            height: 18px;
+        }
+
+        .transmissions-card-caption {
+            height: 18px;
+            margin-top: 0;
+            width: 91px;
+            padding-bottom: 5px;
+        }
+
+        .archive-768-div {
+            height: 136px;
+            padding-bottom: 54px;
+
+        }
+
+        .archive-info-768 {
+            flex-direction: column-reverse;
+        }
+
+        .archive {
+
+            padding: 9.5px 0px;
+            border: 2px solid var(--himnakan-sev-color);
+            border-radius: 77px;
+            color: #121723;
+            /* margin-top: 24px; */
+            margin-bottom: 12px;
+            margin-top: 0;
+            font-size: 16px;
+            font-weight: 500;
+            width: 110px;
+        }
+
+        .archive-p {
+            margin-bottom: 7px;
+            width: 166px;
+            font-size: 14px;
+            font-weight: 400
+        }
+
+
+        .transmissions-card-a {
+            font-size: 12px;
+            width: 91px;
+            margin-left: 10px;
+            color: #6D31EE;
+
+            path {
+                fill: #6D31EE;
+            }
+        }
+
+        .transmissions-card-caption {
+            font-size: 12px;
+            margin-left: 10px;
+            margin-bottom: 5px;
+            margin-top: 10px;
+            width: 91px;
+
+        }
+
+        .more-a {
+            margin-bottom: 12px;
+        }
+
+        .transmissions-card:nth-child(1) {
+            background-image: url(../imges/320\(1\)transmissions.png);
+            background-repeat: no-repeat;
+            background-size: 113px 50px;
+        }
+
+        .transmissions-card:nth-child(2) {
+            background-image: url(../imges/320\(2\)transmissions.png);
+            background-repeat: no-repeat;
+            background-size: 113px 50px;
+        }
+
+        .transmissions-card:nth-child(3) {
+            background-image: url(../imges/320\(3\)transmissions.png);
+            background-repeat: no-repeat;
+            background-size: 113px 50px;
+        }
+
+        .transmissions-card:nth-child(4) {
+            background-image: url(../imges/320\(4\)transmissions.png);
+            background-repeat: no-repeat;
+            background-size: 113px 50px;
+        }
+
+        .transmissions-card:nth-child(5) {
+            background-image: url(../imges/320\(5\)transmissions.png);
+            background-repeat: no-repeat;
+            background-size: 113px 50px;
+        }
+
+        .transmissions-card:nth-child(6) {
+            background-image: url(../imges/320\(6\)transmissions.png);
+            background-repeat: no-repeat;
+            background-size: 113px 50px;
+        }
+
+        .transmissions-card-list {
+            width: 256px;
+        }
+
+        .transmissions-caption {
+            font-size: 24px;
+        }
+
+        .transmissions-card-div {
+            padding-bottom: 30px;
+        }
+
+        .guest-caption {
+            font-size: 24px;
+        }
+
+        .guest-caption-p-p {
+            font-size: 14px;
+            font-weight: 700;
+        }
+
+        .guest-caption-p {
+            font-size: 14px;
+            line-height: 160%;
+            font-weight: 400;
+            width: 100%;
+        }
+
+        .guest-card img {
+            height: 159px;
+        }
+
+        .guest-p {
+            width: 255px;
+            height: 261px;
+        }
+
+        .live-with-guests {
+            padding: 9.5px 14.5px
+        }
+
+        .about-us-caption {
+            font-size: 24px;
+        }
+
+        .about-us-caption-text {
+            width: 256px;
+
+        }
+
+        .about-us-p {
+            max-width: 256px;
+            margin: 0 auto;
+        }
+
+        .about-us-p-p {
+            font-size: 14px;
+            line-height: 160%;
+            font-weight: 400;
+            height: 220px;
+            width: 100%;
+
+
+
+        }
+
+
+        .about-us-text-p {
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 150%;
+            height: 42px;
+
+        }
+
+        .about-us-card-list {
+            width: 256px;
+            gap: 30px;
+        }
+
+        .about-us-card-img {
+            width: 113px;
+            height: 113px;
+            margin-bottom: 12px;
+        }
+
+        .about-us-card {
+            width: 113px;
+            margin-bottom: 0;
+        }
+
+        .about-us-card-caption {
+            font-size: 14px;
+            margin-bottom: 5px;
+            margin-top: 0;
+        }
+
+        .about-us-card-p {
+            font-size: 12px;
+            line-height: 16px;
+        }
+
+        .name-mail {
+            width: 223px;
+            font-size: 16px;
+            height: 50px;
+        }
+
+        #comment {
+            width: 223px;
+            font-size: 16px;
+        }
+
+        .data-list {
+            max-width: 256px;
+        }
+
+        .about-us-started {
+            max-width: 256px;
+        }
+
+        .about-us-checkbox-p {
             font-size: 9px;
         }
-      
+
+        .about-us-started-a {
+            height: 50px;
+            width: 172px;
+            font-size: 16px;
+        }
+
+        .about-us-checkbox {
+            margin-top: 20px;
+        }
+
+        #about-us {
+            max-width: 256px;
+        }
+
+        #footer-2 {
+            max-width: 320px;
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+
+        .footer-logo-a {
+            padding: 54px 0;
+        }
+
+        .footer-a-list2 {
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 30px;
+            padding-top: 30px;
+            background-color: #121723;
+        }
+
+        .footer-a-list-ul {
+            height: 100%;
+            max-width: 256px;
+            margin: 0 auto;
+        }
+
+        .footer-a {
+            font-size: 12px;
+            font-weight: 400;
+        }
+
+        .footer-end-p {
+            font-size: 12px;
+        }
+
+
 
     }
-    @media(min-width:320px){
 
+
+    @media(min-width:320px) {
+        .footer-a-list2 {
+            display: none;
+        }
     }
