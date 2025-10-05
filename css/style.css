@@ -87,7 +87,8 @@
     }
 
     .nav-list-div {
-        border: 1px solid #E6E8EC;
+        border-top: 1px solid #E6E8EC;
+        border-bottom: 1px solid #E6E8EC;
         padding: 15px 0;
         width: 100%;
     }
@@ -1286,7 +1287,7 @@
 
 
     /* 1024 TABLET*/
-    @media(max-width:1024px) {
+    @media(max-width:1124px) {
 
         #home,
         #podcasts,
@@ -1521,7 +1522,7 @@
         }
     }
 
-    @media(min-width:1025px) {
+    @media(min-width:1125px) {
         .nav2 {
             display: none;
         }
@@ -1535,7 +1536,7 @@
 
     /*768*/
 
-    @media(max-width: 768px) {
+    @media(max-width: 900px) {
 
         #home,
         #podcasts,
@@ -1824,7 +1825,7 @@
 
     }
 
-    @media(min-width:769px) {
+    @media(min-width:900px) {
         .archive-768-div {
             display: none;
 
@@ -1834,7 +1835,7 @@
     /*320 */
 
 
-    @media(max-width: 320px) {
+    @media(max-width: 567px) {
 
         #home,
         #podcasts,
@@ -2188,6 +2189,10 @@
 
         }
 
+        .podcasts-inner-list {
+            padding-bottom: 57px;
+        }
+
         .more-a {
             margin-bottom: 12px;
         }
@@ -2400,12 +2405,24 @@
             font-size: 12px;
         }
 
+        .transmissions-card-list {
+            padding-top: 30px;
+        }
+
+        .transmissions-card-div {
+            padding: 54px 0 68px 0;
+        }
+
+        .reklam-tex-div {
+            width: 100%;
+        }
+
 
 
     }
 
 
-    @media(min-width:320px) {
+    @media(min-width:567px) {
         .footer-a-list2 {
             display: none;
         }
