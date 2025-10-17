@@ -39,10 +39,10 @@ View how the layout adapts across desktop, tablet, and mobile devices
 
 Screenshots will be added below to demonstrate responsive design across various devices.
 
-📸 ![ Desktop View Screenshot ](imges/1920.png)
-📸 ![ Laptop View Screenshot ](imges/1024.png)
-📸 ![ Tablet View Screenshot ](imges/768.png)
-📸 ![ Mobile View Screenshot ](imges/320.png)
+📸 Desktop View Screenshot ![ Desktop View Screenshot ](imges/1920.png)
+📸 Laptop View Screenshot  ![ Laptop View Screenshot ](imges/1024.png)
+📸 Tablet View Screenshot ![ Tablet View Screenshot ](imges/768.png)
+📸 Mobile View Screenshot ![ Mobile View Screenshot ](imges/320.png)
 
 
 Technologies Used
